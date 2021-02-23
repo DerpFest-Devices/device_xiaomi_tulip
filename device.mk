@@ -325,7 +325,6 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 # FM
-ifeq ($(BOARD_HAVE_QCOM_FM),true)
 PRODUCT_PACKAGES += \
     FM2 \
     libqcomfm_jni \
@@ -334,7 +333,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     qcom.fmradio
-endif
 
 # Ion
 PRODUCT_PACKAGES += \
@@ -663,3 +661,8 @@ PRODUCT_PACKAGES += \
     init.cpuboost.sh \
     init.parallax.rc \
     init.parallax.sh
+
+# Custom Launcher
+PRODUCT_PACKAGES += \
+    ShadyRecentsProvider 
+
