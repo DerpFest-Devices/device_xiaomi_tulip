@@ -662,7 +662,10 @@ PRODUCT_PACKAGES += \
     init.parallax.rc \
     init.parallax.sh
 
-# Custom Launcher
+# Custom Recents Provider
 PRODUCT_PACKAGES += \
     ShadyRecentsProvider 
 
+# Lawnchair
+PRODUCT_PACKAGES += \
+    Lawnchair
